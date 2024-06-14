@@ -7,9 +7,7 @@
   padding-top: 0;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to right,#010209,#000527,#010209);;
-  
-  
+  background: linear-gradient(to right,#010209,#000527,#010209);
 }
 
 .layout-container {
@@ -18,7 +16,6 @@
 }
 
 .left-side {
-  flex: 1;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -30,21 +27,12 @@
   display: block; /* Ensures the image behaves as a block element */
   margin-left: auto; /* Center the image horizontally */
   margin-right: auto; /* Center the image horizontally */
-}
-
-.left-side img {
-  padding: 10px;
   padding-top: 20px;
-  
   animation: updown 3s linear infinite; /* If you have an animation, ensure it doesn't interfere with sizing */
 }
 
-
-
 .right-side {
-  padding: 40px;
-  padding-top: 50px;
-  flex: 1;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,12 +41,11 @@
 
 .carousel .slide img {
   padding: 10px;
-  width: auto;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .protitle {
-
   padding-top: 20px;
   padding-bottom: 20px;
   background: linear-gradient(to right,#010209,#000527,#010209);
@@ -77,13 +64,6 @@
   z-index: -1;
 }
 
-
-.carousel-caption h3, 
-.carousel-caption h4, 
-.carousel-caption p {
-  color: black!important;
-}
-
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
   padding: 20px; /* Add some padding for better readability */
@@ -94,4 +74,44 @@
 .carousel-caption h4, 
 .carousel-caption p {
   color: white !important; /* Change the text color to white for better contrast */
+}
+
+@media (max-width: 767px) {
+  .project-section {
+    padding-top: 20px;
+  }
+  .left-side {
+    padding: 20px;
+    text-align: center;
+  }
+  .right-side {
+    padding: 20px;
+  }
+  .carousel .slide img {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-caption {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .project-section {
+    padding-top: 10px;
+  }
+  .left-side {
+    padding: 10px;
+    text-align: center;
+  }
+  .right-side {
+    padding: 10px;
+  }
+  .carousel .slide img {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-caption {
+    padding: 5px;
+  }
 }
