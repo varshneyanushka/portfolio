@@ -20,6 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .left-side img {
   max-width: 100%;
@@ -27,8 +28,10 @@
   display: block; /* Ensures the image behaves as a block element */
   margin-left: auto; /* Center the image horizontally */
   margin-right: auto; /* Center the image horizontally */
-  padding-top: 20px;
+  padding: 20px;
+  padding-right: 30px;
   animation: updown 3s linear infinite; /* If you have an animation, ensure it doesn't interfere with sizing */
+  border-radius: 10px;
 }
 
 .right-side {
