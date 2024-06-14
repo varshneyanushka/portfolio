@@ -1,0 +1,85 @@
+/*********skills**********/
+.skititle{
+    padding-top:30px;
+    padding-bottom:50px;
+    font-size: 45px;
+    font-weight: 700;
+    background: linear-gradient(to right,#010209,#000527,#010209);
+    text-align: center;
+    font-family: 'Centra', sans-serif !important;
+  
+  }
+  
+  .skill{
+   
+    padding:5px;
+    padding-bottom: 20px;
+    
+    background: linear-gradient(to right,#010209,#000527,#010209);
+    text-align: center;
+    font-family: 'Centra', sans-serif !important;
+  
+  }
+  .sbg{
+      
+    
+    position: relative;
+    width: auto;
+    height: 100%;
+  }
+  .contact-img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px; /* Adjust as needed */
+    height: auto;
+  }
+  .backendrow{
+    background-image: url('../assets/test/19.jpeg');
+    background-position:left;
+    /* background: linear-gradient(to bottom,#010837,#04126d); */
+    padding: 50px;
+    padding-bottom: 30px;
+    border-top-right-radius:75px;
+    border-bottom-right-radius:75px;
+    z-index: -1;
+
+    
+  }
+
+  .frontrow{
+    
+    background-image: url('../assets/test/19.jpeg');
+    
+    z-index: -1;
+    background-position:top;
+    
+    /* background:linear-gradient(to bottom, #0e1c6b,#1b2e8f); */
+    padding: 50px;
+    padding-bottom: 30px;
+    border-top-right-radius:75px;
+    border-bottom-right-radius:75px;
+
+   
+  }
+
+  .datarow{
+    background-image: url('../assets/test/19.jpeg');
+    background-position:absolut;
+    /* background:linear-gradient(to bottom, #203390,#2d43af); */
+    padding: 50px;
+    padding-bottom: 30px;
+    border-top-right-radius:75px;
+    border-bottom-right-radius:75px;
+    
+  }
+  .skill-row {
+    margin: 2rem; /* Adjust spacing as desired */
+    text-align: left;
+  }
+  .test{
+    padding: 10px;
+    
+  }
+  
+ 
