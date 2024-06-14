@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import vid from "../assets/video/bg_stars.mp4";
-import './Banner.css'
+import './Banner.css';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(100 - Math.random() * 50);
   const [index, setIndex] = useState(1);
-  const toRotate = ["a Coder", "a Web Developer", "a Flutist", "a Dancer", "an Engineer","a Movie Buff","a Judoka" ];
+  const toRotate = ["a Coder", "a Web Developer", "a Flutist", "a Dancer", "an Engineer", "a Movie Buff", "a Judoka"];
   const period = 1000;
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export const Banner = () => {
     }, delta);
 
     return () => { clearInterval(ticker) };
-  }, [text])
+  }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -45,7 +45,7 @@ export const Banner = () => {
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
-  }
+  };
 
   return (
     <section className="banner" id="home">
@@ -56,9 +56,7 @@ export const Banner = () => {
             <span className="tagline">Hello humble traveller</span>
             <h1>{`I'm Anushka Varshney `}</h1>
             <h1><span className="wrap"> I am {text}</span></h1>
-            <p>I am a techie,pursuing my engineering from IIT Indore.
-               
-            </p>
+            <p>I am a techie, pursuing my engineering from IIT Indore.</p>
             <button onClick={() => console.log('connect')}>
               Get to know more about my technical skills <ArrowRightCircle size={25} />
             </button>
@@ -70,4 +68,4 @@ export const Banner = () => {
       </Container>
     </section>
   )
-}
+};
