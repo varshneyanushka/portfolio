@@ -59,9 +59,9 @@ export const Banner = () => {
             <h1>{`I'm Anushka Varshney `}</h1>
             <h1><span className="wrap"> I am {text}</span></h1>
             <p>I am a techie, pursuing my engineering from IIT Indore.</p>
-            <button onClick={() => console.log('connect')}>
+            <a href="#skill"><button onClick={() => console.log('connect')}>
               Get to know more about my technical skills <ArrowRightCircle size={25} />
-            </button>
+            </button></a>
           </Col>
           <Col className="content" xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header Img" />
