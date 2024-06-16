@@ -4,6 +4,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import vid from "../assets/video/bg_stars.mp4";
 import './Banner.css';
+import { BrowserRouter } from "react-router-dom";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -48,6 +49,7 @@ export const Banner = () => {
   };
 
   return (
+    <BrowserRouter>
     <section className="banner" id="home">
       <video className="background-video" src={vid} autoPlay loop muted></video>
       <Container>
@@ -67,5 +69,6 @@ export const Banner = () => {
         </Row>
       </Container>
     </section>
+    </BrowserRouter>
   )
 };

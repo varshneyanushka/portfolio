@@ -1,11 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import p from "../assets/test/6.png";
-
+import { BrowserRouter } from "react-router-dom";
 import './Skills.css'
 
 export const SkillsTitle = () => {
   return (
-    <div className="skititle">
+    <div className="skititle" id="skill">
       <h1>SKILLS</h1>
       <hr className="divider" />
     </div>
@@ -14,7 +14,8 @@ export const SkillsTitle = () => {
 
 export const Skills = () => {
   return (
-    <section className="skill">
+    <BrowserRouter>
+    <section className="skill" >
       <Container fluid className="px-0"> {/* Use fluid container for responsiveness */}
         <Row className="h-100 d-flex align-items-left rounded-end"> {/* Set row height to 75%, vertically centered, rounded on right end, thicker dark border */}
           <Col xs={12} md={9} xl={9}className="skills-content"> {/* Skills content takes 9 columns */}
@@ -65,5 +66,6 @@ export const Skills = () => {
         </Row>
       </Container>
     </section>
+    </BrowserRouter>
   );
 }

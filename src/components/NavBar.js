@@ -6,6 +6,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import './NavBar.css';
+import { BrowserRouter } from "react-router-dom";
 
 export const NavBar = () => {
 
@@ -31,7 +32,7 @@ export const NavBar = () => {
   }
 
   return (
-    
+    <BrowserRouter>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="#connect">
@@ -42,10 +43,10 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              
-              {/* <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#skill" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link> */}
+            <a href=""><Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link></a>
+            <a href=""> <Nav.Link href="#skill" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link></a>
+            <a href=""> <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link></a>
+            
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
@@ -54,12 +55,13 @@ export const NavBar = () => {
                 <a href="https://www.instagram.com/varshney._.anushka/"><img src={navIcon3} alt="" /></a>
               </div>
               
-                <button className="vvd"><span>Let’s Connect</span></button>
+              <a href="#connect"><button className="vvd"><span>Let’s Connect</span></button></a>
               
             </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      </BrowserRouter>
    
   )
 }

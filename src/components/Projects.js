@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel';
-
+import { BrowserRouter } from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import p1 from "../assets/test/p1.png";
 import p2 from "../assets/img/sum.png";
@@ -12,7 +12,7 @@ import './Projects.css';
 
 export const Title = () => {
     return (
-        <div className="protitle">
+        <div className="protitle" id="project">
             <h1>PROJECTS</h1>
             <hr className="divider" />
         </div>
@@ -21,6 +21,7 @@ export const Title = () => {
 
 export const Projects = () => {
     return (
+        <BrowserRouter>
         <section className="project-section">
             <Container fluid>
                 <Row className="align-items-center">
@@ -64,6 +65,7 @@ export const Projects = () => {
                 </Row>
             </Container>
         </section>
+        </BrowserRouter>
     );
 }
 
