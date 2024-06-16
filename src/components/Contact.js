@@ -7,7 +7,7 @@ import './Contact.css';
 
 export const ContactTitle = () => {
   return (
-    <div className="skititle" id="connect">
+    <div className="skititle" >
       <h1>Let's Talk</h1>
       <hr className="divider" />
     </div>
@@ -58,7 +58,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="contact" >
+    <section className="contact" id="connect" >
       <Container size={9}>
         <Row className="align-items-center">
           <Col size={10} md={10} className="align-items-center">
