@@ -26,7 +26,7 @@ export const Skills = () => {
               <Col><h2>Backend:</h2></Col> 
                 <Col><h4>Django</h4></Col>
                 <Col><h4>Node</h4></Col>
-                <Col></Col>
+                <Col><h4>Express</h4></Col>
                 <Col></Col>
                 <Col></Col>
                 
