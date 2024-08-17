@@ -50,7 +50,7 @@ export const Skills = () => {
 
              <Row className="datarow">
               <Col><h2>Database:</h2></Col>
-                <Col><h4>MySQLa</h4></Col>
+                <Col><h4>MySQL</h4></Col>
                 <Col><h4>MONGODB</h4></Col>
                 <Col><h4>PostgresSQL</h4></Col>
                 <Col></Col>
